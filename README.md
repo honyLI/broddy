@@ -6,4 +6,4 @@
 ## 依赖安装
 >sudo ./install
 
-![broddy](assets/image/borddy.svg)
+![broddy](/assets/image/borddy.svg)
