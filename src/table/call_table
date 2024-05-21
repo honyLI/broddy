@@ -1,0 +1,65 @@
+    1008 	48 8b 05 d9 2f 00 00 	mov    0x2fd9(%rip),%rax        # 3fe8 <__gmon_start__>
+    1014 	ff d0                	callq  *%rax
+    1020 	ff 35 7a 2f 00 00    	pushq  0x2f7a(%rip)        # 3fa0 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026 	f2 ff 25 7b 2f 00 00 	bnd jmpq *0x2f7b(%rip)        # 3fa8 <_GLOBAL_OFFSET_TABLE_+0x10>
+    1084 	f2 ff 25 6d 2f 00 00 	bnd jmpq *0x2f6d(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>
+    1094 	f2 ff 25 15 2f 00 00 	bnd jmpq *0x2f15(%rip)        # 3fb0 <puts@GLIBC_2.2.5>
+    10a4 	f2 ff 25 0d 2f 00 00 	bnd jmpq *0x2f0d(%rip)        # 3fb8 <printf@GLIBC_2.2.5>
+00000000000010b0 <syscall@plt> 
+    10b4 	f2 ff 25 05 2f 00 00 	bnd jmpq *0x2f05(%rip)        # 3fc0 <syscall@GLIBC_2.2.5>
+    10c4 	f2 ff 25 fd 2e 00 00 	bnd jmpq *0x2efd(%rip)        # 3fc8 <malloc@GLIBC_2.2.5>
+    10d4 	f2 ff 25 f5 2e 00 00 	bnd jmpq *0x2ef5(%rip)        # 3fd0 <sleep@GLIBC_2.2.5>
+    10f3 	4c 8d 05 06 07 00 00 	lea    0x706(%rip),%r8        # 1800 <__libc_csu_fini>
+    10fa 	48 8d 0d 8f 06 00 00 	lea    0x68f(%rip),%rcx        # 1790 <__libc_csu_init>
+    1101 	48 8d 3d ba 05 00 00 	lea    0x5ba(%rip),%rdi        # 16c2 <main>
+    1108 	ff 15 d2 2e 00 00    	callq  *0x2ed2(%rip)        # 3fe0 <__libc_start_main@GLIBC_2.2.5>
+    1110 	48 8d 3d f9 2e 00 00 	lea    0x2ef9(%rip),%rdi        # 4010 <__TMC_END__>
+    1117 	48 8d 05 f2 2e 00 00 	lea    0x2ef2(%rip),%rax        # 4010 <__TMC_END__>
+    1123 	48 8b 05 ae 2e 00 00 	mov    0x2eae(%rip),%rax        # 3fd8 <_ITM_deregisterTMCloneTable>
+    1140 	48 8d 3d c9 2e 00 00 	lea    0x2ec9(%rip),%rdi        # 4010 <__TMC_END__>
+    1147 	48 8d 35 c2 2e 00 00 	lea    0x2ec2(%rip),%rsi        # 4010 <__TMC_END__>
+    1164 	48 8b 05 85 2e 00 00 	mov    0x2e85(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable>
+    1184 	80 3d 85 2e 00 00 00 	cmpb   $0x0,0x2e85(%rip)        # 4010 <__TMC_END__>
+    118e 	48 83 3d 62 2e 00 00 	cmpq   $0x0,0x2e62(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>
+    119b 	48 8b 3d 66 2e 00 00 	mov    0x2e66(%rip),%rdi        # 4008 <__dso_handle>
+    11a2 	e8 d9 fe ff ff       	callq  1080 <__cxa_finalize@plt>
+    11a7 	e8 64 ff ff ff       	callq  1110 <deregister_tm_clones>
+    11ac 	c6 05 5d 2e 00 00 01 	movb   $0x1,0x2e5d(%rip)        # 4010 <__TMC_END__>
+    11ff 	e8 bc fe ff ff       	callq  10c0 <malloc@plt>
+    1217 	48 8d 3d e6 0d 00 00 	lea    0xde6(%rip),%rdi        # 2004 <_IO_stdin_used+0x4>
+    121e 	e8 6d fe ff ff       	callq  1090 <puts@plt>
+    1225 	48 8d 3d dc 0d 00 00 	lea    0xddc(%rip),%rdi        # 2008 <_IO_stdin_used+0x8>
+    122c 	e8 5f fe ff ff       	callq  1090 <puts@plt>
+    123b 	e8 70 fe ff ff       	callq  10b0 <syscall@plt>
+    15f2 	48 8d 3d 13 0a 00 00 	lea    0xa13(%rip),%rdi        # 200c <_IO_stdin_used+0xc>
+    15fe 	e8 9d fa ff ff       	callq  10a0 <printf@plt>
+    1608 	48 8d 3d 07 0a 00 00 	lea    0xa07(%rip),%rdi        # 2016 <_IO_stdin_used+0x16>
+    1614 	e8 87 fa ff ff       	callq  10a0 <printf@plt>
+    161e 	e8 ad fa ff ff       	callq  10d0 <sleep@plt>
+    1636 	8b 05 d8 29 00 00    	mov    0x29d8(%rip),%eax        # 4014 <mutex>
+    163f 	89 05 cf 29 00 00    	mov    %eax,0x29cf(%rip)        # 4014 <mutex>
+    1645 	8b 15 c9 29 00 00    	mov    0x29c9(%rip),%edx        # 4014 <mutex>
+    1650 	48 8d 3d d3 09 00 00 	lea    0x9d3(%rip),%rdi        # 202a <_IO_stdin_used+0x2a>
+    165c 	e8 3f fa ff ff       	callq  10a0 <printf@plt>
+    166b 	48 8b 05 a6 29 00 00 	mov    0x29a6(%rip),%rax        # 4018 <mutex2>
+    1679 	48 8d 3d aa 09 00 00 	lea    0x9aa(%rip),%rdi        # 202a <_IO_stdin_used+0x2a>
+    1685 	e8 16 fa ff ff       	callq  10a0 <printf@plt>
+    168a 	48 8b 05 87 29 00 00 	mov    0x2987(%rip),%rax        # 4018 <mutex2>
+    16a1 	48 8d 05 6c 29 00 00 	lea    0x296c(%rip),%rax        # 4014 <mutex>
+    16bb 	e8 18 fb ff ff       	callq  11d8 <fun3>
+    16fe 	48 8d 3d 2e 09 00 00 	lea    0x92e(%rip),%rdi        # 2033 <_IO_stdin_used+0x33>
+    170a 	e8 91 f9 ff ff       	callq  10a0 <printf@plt>
+    1718 	e8 a3 f9 ff ff       	callq  10c0 <malloc@plt>
+    171d 	48 89 05 f4 28 00 00 	mov    %rax,0x28f4(%rip)        # 4018 <mutex2>
+    1724 	48 8b 05 ed 28 00 00 	mov    0x28ed(%rip),%rax        # 4018 <mutex2>
+    1736 	e8 95 f9 ff ff       	callq  10d0 <sleep@plt>
+    1744 	8b 1d ca 28 00 00    	mov    0x28ca(%rip),%ebx        # 4014 <mutex>
+    174f 	e8 75 fa ff ff       	callq  11c9 <fun1>
+    1758 	48 8d 3d f1 08 00 00 	lea    0x8f1(%rip),%rdi        # 2050 <_IO_stdin_used+0x50>
+    1764 	e8 37 f9 ff ff       	callq  10a0 <printf@plt>
+    176e 	e8 5d f9 ff ff       	callq  10d0 <sleep@plt>
+    1782 	e8 60 fa ff ff       	callq  11e7 <fun2>
+    1796 	4c 8d 3d fb 25 00 00 	lea    0x25fb(%rip),%r15        # 3d98 <__frame_dummy_init_array_entry>
+    17ad 	48 8d 2d ec 25 00 00 	lea    0x25ec(%rip),%rbp        # 3da0 <__do_global_dtors_aux_fini_array_entry>
+    17bc 	e8 3f f8 ff ff       	callq  1000 <_init>
+    17d9 	41 ff 14 df          	callq  *(%r15,%rbx,8)
